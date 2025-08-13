@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Better Call Nikhil!</title>
+  <style>
+    body {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      background: linear-gradient(135deg, #ffcc00, #ff3300);
+      color: #111;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 3rem 2rem;
+      background: #111;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      animation: popIn 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0 0;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1s;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h2 {
+      color: #d40000;
+      font-size: 2rem;
+      margin-top: 2rem;
+      animation: slideIn 0.8s ease forwards;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #fff5e6;
+      border: 2px solid #ff9900;
+      border-radius: 10px;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      font-size: 1.1rem;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .testimonials {
+      background: #fff5e6;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: 1rem;
+      font-style: italic;
+      border: 2px dashed #ff3300;
+      animation: zoomIn 1s ease forwards;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .cta {
+      background: #ff3300;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.3s;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      animation: bounce 2s infinite;
+    }
+
+    .cta:hover {
+      background: #cc0000;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes popIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>“Your Backend in Trouble? You Better Call Nikhil!”</h1>
+    <p>From melting servers to misbehaving AI — I fix it all… and bill less than AWS.</p>
+  </header>
+
+  <section>
+    <h2>💼 My "Legal" (Technical) Specialties</h2>
+    <ul>
+      <li><strong>AWS Wizardry</strong> – Juggling EC2, ECS, S3, Lambda… without dropping the ball.</li>
+      <li><strong>Docker Chaos Control</strong> – Containers that float, scale, and don’t sink like the Titanic.</li>
+      <li><strong>Backend Scalability</strong> – Node.js, Rails, LLM APIs that can handle rock-concert-level traffic.</li>
+      <li><strong>Security Lockdown</strong> – Systems tighter than Saul Goodman’s alibis.</li>
+      <li><strong>LLM Wrangling</strong> – AI that answers without hallucinating you into a lawsuit.</li>
+    </ul>
+
+    <h2>Why Me?</h2>
+    <p>Because I speak fluent backend, but can pitch like an infomercial.  
+      <em>Other engineers fix bugs. I negotiate with them. And win.</em>
+    </p>
+
+    <div class="testimonials">
+      “Our AWS bill dropped by 40%. I didn’t know that was legal.” – Anonymous CFO  
+      <br>“Our LLM stopped making stuff up. Now it just stares into the void.” – Startup Founder  
+      <br>“Scaled from 10 users to 10 million. Still can’t believe it.” – Product Manager
+    </div>
+
+    <button class="cta" onclick="alert('📞 Figurative call placed! We’ll be in touch…')">
+      📞 Call Nikhil (Figuratively)
+    </button>
+  </section>
+
+  <footer>
+    <p>© 2025 Nikhil Bajaj – Backend Engineer & Infra Fixer Extraordinaire</p>
+  </footer>
+
+  <script>
+    console.log("%cYou found the Easter egg!", "color: red; font-size: 20px; font-weight: bold;");
+    console.log("👋 Hey developer — if you like what you see, let's talk backend.");
+  </script>
+</body>
+</html>
